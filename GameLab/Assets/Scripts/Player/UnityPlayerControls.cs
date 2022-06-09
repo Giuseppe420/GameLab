@@ -11,7 +11,6 @@ public class UnityPlayerControls : MonoBehaviour
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction duckAction;
-    public InputAction powerUpAction;
     public InputAction useAction;
     Vector2 move;
     float jump;
@@ -315,8 +314,7 @@ public class UnityPlayerControls : MonoBehaviour
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
         duckAction = playerInput.actions["Duck"];
-        useAction = playerInput.actions["Use"];
-        powerUpAction = playerInput.actions["PowerUp"];
+        useAction = playerInput.actions["PowerUp"];
     }
     #endregion
     void ChangeOrientation()
